@@ -10,16 +10,13 @@
     <div class="container">
         <h1>Certificate Generator</h1>
         <input type="file" id="imageUpload" accept="image/*">
-        <input type="text" id="participantName" placeholder="Enter Participant Name">
-        <input type="text" id="certificateNumber" placeholder="Enter Certificate Number">
+        <input type="file" id="dataUpload" accept=".csv, .xlsx, .xls">
         <button id="generateBtn">Generate Certificate</button>  
         <canvas id="certificateCanvas"></canvas>
         <a id="downloadLink" style="display:none;">Download Certificate</a>
     </div>
-    <script src="program.JS"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="program.js"></script>
 </body>
 </html>
-
-
-
-
